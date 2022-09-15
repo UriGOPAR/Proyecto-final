@@ -15,6 +15,14 @@ Uri Jared Gopar Morales A01709413
 
 Félix Javier Rojas Gallardo A01201946
 
+### Modificaciones
+
 1. Añadir color rojo a las X y azul a las O
 2. Cambio de tamaño para centrar a las X y O
 3. Validación de X y O para que sólo pueda haber una por casilla
+
+### Validación PEP8
+
+1. Al importar turtle, lo importamos con alias
+2. Validado utilizando flake8, se encuentra en validacion.png
+
