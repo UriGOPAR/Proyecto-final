@@ -17,12 +17,14 @@ def grid():
 
 def drawx(x, y):
     # Draw X player.
+    color('red')
     line(x + 10, y + 10, x + 123, y + 123)
     line(x + 10, y + 123, x + 123, y + 10)
 
 
 def drawo(x, y):
     # Draw O player
+    color('blue')
     up()
     goto(x + 67, y + 5)
     down()
@@ -39,7 +41,7 @@ players = [drawx, drawo]
 
 
 def tap(x, y):
-    """Draw X or O in tapped square."""
+    # Draw X or O in tapped square
     x = floor(x)
     y = floor(y)
     player = state['player']
