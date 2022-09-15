@@ -1,7 +1,7 @@
 """Tic Tac Toe code by ©2017-2022, Grant Jenks
 This is a modified version with educational purposes
 """
-
+# Import with alias to avoid namespace contamination
 import turtle as turtle
 
 from freegames import line
@@ -57,10 +57,23 @@ def tap(x, y):
         state['player'] = not player
 
 
+# Startup 420x420 window
 turtle.setup(420, 420, 370, 0)
+
+# Do not show cursor
 turtle.hideturtle()
+
+# Do not show trail
 turtle.tracer(False)
+
+# Generate grid
 grid()
+
+# Refresh turtle cursor
 turtle.update()
+
+# Await for click on screen to draw X or O
 turtle.onscreenclick(tap)
+
+# Finish instance
 turtle.done()
