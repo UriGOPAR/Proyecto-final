@@ -39,16 +39,22 @@ def floor(value):
 state = {'player': 0}
 players = [drawx, drawo]
 
+# array of used positions
+busySquares = []
+
 
 def tap(x, y):
     # Draw X or O in tapped square
     x = floor(x)
     y = floor(y)
-    player = state['player']
-    draw = players[player]
-    draw(x, y)
-    turtle.update()
-    state['player'] = not player
+    # validate X's and O's
+    if [x, y] not in busySquares:
+        busySquares.append([x, y])
+        player = state['player']
+        draw = players[player]
+        draw(x, y)
+        turtle.update()
+        state['player'] = not player
 
 
 turtle.setup(420, 420, 370, 0)
