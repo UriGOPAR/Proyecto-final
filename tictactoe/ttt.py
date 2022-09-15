@@ -2,7 +2,7 @@
 This is a modified version with educational purposes
 """
 
-from turtle import *
+import turtle as turtle
 
 from freegames import line
 
@@ -17,18 +17,18 @@ def grid():
 
 def drawx(x, y):
     # Draw X player.
-    color('red')
+    turtle.color('red')
     line(x + 10, y + 10, x + 123, y + 123)
     line(x + 10, y + 123, x + 123, y + 10)
 
 
 def drawo(x, y):
     # Draw O player
-    color('blue')
-    up()
-    goto(x + 67, y + 5)
-    down()
-    circle(62)
+    turtle.color('blue')
+    turtle.up()
+    turtle.goto(x + 67, y + 5)
+    turtle.down()
+    turtle.circle(62)
 
 
 def floor(value):
@@ -47,14 +47,14 @@ def tap(x, y):
     player = state['player']
     draw = players[player]
     draw(x, y)
-    update()
+    turtle.update()
     state['player'] = not player
 
 
-setup(420, 420, 370, 0)
-hideturtle()
-tracer(False)
+turtle.setup(420, 420, 370, 0)
+turtle.hideturtle()
+turtle.tracer(False)
 grid()
-update()
-onscreenclick(tap)
-done()
+turtle.update()
+turtle.onscreenclick(tap)
+turtle.done()
