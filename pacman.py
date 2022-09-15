@@ -10,8 +10,8 @@ Exercises
 """
 
 from random import choice
-from turtle import *
-
+from turtle import Turtle, update, bgcolor, clear, up, goto, dot, \
+    ontimer, setup, hideturtle, tracer, listen, onkey, done
 from freegames import floor, vector
 
 state = {'score': 0}
@@ -90,8 +90,8 @@ def valid(point):
 
 def world():
     """Draw world using path."""
-    bgcolor('black')
-    path.color('blue')
+    bgcolor('pink')
+    path.color('green')
 
     for index in range(len(tiles)):
         tile = tiles[index]
@@ -154,7 +154,7 @@ def move():
         if abs(pacman - point) < 20:
             return
 
-    ontimer(move, 100)
+    ontimer(move, 50)
 
 
 def change(x, y):
