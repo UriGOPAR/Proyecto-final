@@ -35,4 +35,3 @@ Arturo Cristián Díaz López A01709522
 1. Se agregó un contador de taps "counter"
 2. En la función tap, dentro del if y el else, se agregó un print para mostrar cada que se haga un tap.
 3. Al final del código, se agregó código para cuando el dibujo haya sido terminado.
-4.Se modifico el formato conforme al estándar PEP8 de python
