@@ -26,3 +26,12 @@ Félix Javier Rojas Gallardo A01201946
 1. Al importar turtle, lo importamos con alias
 2. Validado utilizando flake8, se encuentra en validacion.png
 
+## Memory
+
+Arturo Cristián Díaz López A01709522
+
+### Modificaciones
+
+1. Se agregó un contador de taps "counter"
+2. En la función tap, dentro del if y el else, se agregó un print para mostrar cada que se haga un tap.
+3. Al final del código, se agregó código para cuando el dibujo haya sido terminado.
